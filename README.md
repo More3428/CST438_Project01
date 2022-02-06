@@ -21,7 +21,7 @@ Application would also use a Room database to store the search results of the us
 their search history.
 
 API used:
-Genius API: https://docs.genius.com/ : The API has four main aspects of usage, but the ones that we will be implementing will to use the Genius's library of musical metadat to
+Genius API: https://docs.genius.com/ : The API has four main aspects of usage, but the ones that we will be implementing will to use the Genius's library of musical metadata to
 return information about the artist and song.
 
 
