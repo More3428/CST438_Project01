@@ -27,3 +27,7 @@ return information about the artist and song.
 
 MusixMatch API : https://developer.musixmatch.com : Similarly to the Genius API, should an issue occur during development of the project this API works in a similar fashion and can implemented to
 return the same information as the other API.
+
+Links to useful Resources:
+REST API - https://www.youtube.com/watch?v=xPi-z3nOcn8
+Room Databases tutorial - https://www.youtube.com/watch?v=qO56SL856xc&list=PLdHg5T0SNpN3CMNtsd5KGaiBtzhTGIwtC
