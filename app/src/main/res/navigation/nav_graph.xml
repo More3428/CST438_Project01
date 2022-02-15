@@ -15,6 +15,7 @@
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.daclink.drew.sp22.cst438_project01_starter.SecondFragment"
@@ -24,5 +25,23 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ResultFragment"
+            app:destination="@+id/ResultFragment" />
+
     </fragment>
+
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.daclink.drew.sp22.cst438_project01_starter.ResultsPage"
+        android:label="Result Fragment"
+        tools:layout="@layout/results_page">
+        <action
+            android:id="@+id/action_ResultFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment"/>
+    </fragment>
+
+
+
 </navigation>
