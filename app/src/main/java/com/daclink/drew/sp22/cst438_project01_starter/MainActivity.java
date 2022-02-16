@@ -25,6 +25,7 @@ import com.daclink.drew.sp22.cst438_project01_starter.databinding.ActivityMainBi
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,8 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mUserDisplay;
 
-    private Button mLoginButton;
-    private Button mCreateButton;
+    private EditText userInput;
+    private TextView userOutput;
+
     private UserDAO mUserDAO;
 
     private List<User> mUsers;

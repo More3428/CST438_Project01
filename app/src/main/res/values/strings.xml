@@ -31,4 +31,12 @@
     <string name="register">register</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="intro">The button below shows how to link to song lyrics from within the app.\n
+    If the lyrics plugin is already installed, pressing the button will show the lyrics.\n
+    If the plugin is not yet installed, the user is directed to the download page.\n
+    The lyrics plugin also monitors on-device player and scrobbling activities, displaying a notification everytime a lyrics is identified.
+    </string>
+    <string name="show_lyrics">Press the button below to show the lyrics for the song &quot;Let it be&quot; by The Beatles</string>
+    <string name="load_lyrics">View the Lyrics</string>
 </resources>
