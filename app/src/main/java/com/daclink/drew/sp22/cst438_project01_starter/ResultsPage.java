@@ -9,8 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentFirstBinding;
-import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentSecondBinding;
+import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentLoginBinding;
 import com.daclink.drew.sp22.cst438_project01_starter.databinding.ResultsPageBinding;
 
 public class ResultsPage extends Fragment {
