@@ -13,14 +13,14 @@
 
         <action
             android:id="@+id/action_LoginFragment_to_RegisterFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/RegisterFragment" />
         <action
             android:id="@+id/action_loginFragment_to_SearchFragment"
             app:destination="@id/SearchFragment"/>
     </fragment>
 
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/RegisterFragment"
         android:name="com.daclink.drew.sp22.cst438_project01_starter.RegisterFragment"
         android:label="@string/register"
         tools:layout="@layout/fragment_register">
@@ -35,11 +35,10 @@
         android:name="SearchTask.SearchFragment"
         android:label="Lyric Finder"
         tools:layout="@layout/fragment_search">
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+
 
         <action
-            android:id="@+id/action_SecondFragment_to_ResultFragment"
+            android:id="@+id/action_SearchFragment_to_ResultFragment"
             app:destination="@+id/ResultFragment" />
 
     </fragment>
