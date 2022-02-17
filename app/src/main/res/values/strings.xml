@@ -39,4 +39,7 @@
     </string>
     <string name="show_lyrics">Press the button below to show the lyrics for the song &quot;Let it be&quot; by The Beatles</string>
     <string name="load_lyrics">View the Lyrics</string>
+    <string name="hintText">Enter some lyrics</string>
+    <string name="headerText">Lyric Searcher</string>
+    <string name="searchText">Search</string>
 </resources>

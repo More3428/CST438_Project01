@@ -25,4 +25,14 @@
             android:id="@+id/action_RegisterFragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.daclink.drew.sp22.cst438_project01_starter.LoginFragment"
+        android:label="Lyric Finder"
+        tools:layout="@layout/fragment_login"
+        >
+        <action
+            android:id="@+id/action_loginFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment"/>
+    </fragment>
 </navigation>
