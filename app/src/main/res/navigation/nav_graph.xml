@@ -18,6 +18,7 @@
             android:id="@+id/action_loginFragment_to_SearchFragment"
             app:destination="@id/SearchFragment"/>
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.daclink.drew.sp22.cst438_project01_starter.RegisterFragment"
@@ -28,11 +29,31 @@
             android:id="@+id/action_RegisterFragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
     </fragment>
+    
     <fragment
         android:id="@+id/SearchFragment"
         android:name="SearchTask.SearchFragment"
         android:label="Lyric Finder"
         tools:layout="@layout/fragment_search">
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ResultFragment"
+            app:destination="@+id/ResultFragment" />
 
     </fragment>
+
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.daclink.drew.sp22.cst438_project01_starter.ResultsPage"
+        android:label="Result Fragment"
+        tools:layout="@layout/results_page">
+        <action
+            android:id="@+id/action_ResultFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment"/>
+    </fragment>
+
+
+
 </navigation>

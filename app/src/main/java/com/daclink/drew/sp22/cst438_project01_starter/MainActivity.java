@@ -12,6 +12,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -19,6 +20,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.room.Room;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.daclink.drew.sp22.cst438_project01_starter.databinding.ActivityMainBinding;
 
@@ -30,6 +33,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,6 +80,41 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://developer.musixmatch.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        ResultsInterface resultsInterface = retrofit.create(ResultsInterface.class);
+
+        Call<List<ResultsPage>> call = resultsInterface.getResults();
+
+        call.enqueue(new Callback<List<ResultsPage>>() {
+            @Override
+            public void onResponse(Call<List<ResultsPage>> call, Response<List<ResultsPage>> response) {
+
+                if (response.code() != 200){
+                    // handle the error & display it
+                    return;
+                }
+               List<ResultsPage> lyrics = response.body();
+
+                for( ResultsPage resultsPage : lyrics ){
+                    String responseTest = "";
+
+//                    responseTest += ResultsPage.getLyrics();
+
+                    Log.v("Tag", "" +responseTest);
+                }
+
+
+            }
+
+            @Override
+            public void onFailure(Call<List<ResultsPage>> call, Throwable t) {
+
             }
         });
     }

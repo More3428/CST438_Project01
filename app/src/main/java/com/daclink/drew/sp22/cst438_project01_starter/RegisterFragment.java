@@ -37,6 +37,13 @@ public class RegisterFragment extends Fragment {
                         .navigate(R.id.action_RegisterFragment_to_LoginFragment);
             }
         });
+        binding.buttonThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(SecondFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_ResultFragment);
+            }
+        });
     }
 
     @Override

@@ -41,4 +41,6 @@
     <string name="hintText">Enter some lyrics</string>
     <string name="headerText">Lyric Searcher</string>
     <string name="searchText">Search</string>
+    <string name="playlistbtn">Button</string>
+    <string name="artist">TextView</string>
 </resources>
